@@ -1,0 +1,24 @@
+use_default_settings: true
+server:
+  secret_key: "braklet-searxng-key-2026"
+  limiter: false
+  image_proxy: false
+search:
+  formats:
+    - html
+    - json
+engines:
+  - name: bing
+    engine: bing
+    shortcut: b
+    disabled: false
+  - name: duckduckgo
+    engine: duckduckgo
+    shortcut: d
+    disabled: false
+  - name: yahoo
+    engine: yahoo
+    shortcut: y
+    disabled: false
+general:
+  debug: false
